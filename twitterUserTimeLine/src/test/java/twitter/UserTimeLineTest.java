@@ -15,6 +15,7 @@ import org.junit.Test;
 
 /**
  * UserTimeLineTest.
+ * src/test/resoureces に propertiesファイルを設定していれてください.
  * @author yuya
  *
  */
