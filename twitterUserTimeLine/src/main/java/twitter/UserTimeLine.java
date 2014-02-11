@@ -142,8 +142,12 @@ class UserTimeLine {
     public static void main(final String[] args) throws IOException {
         if (args.length != 3) {
             System.out.println("Please input format: "
-                    + "java -cp UserTimeLine.jar twitter.twitterUserTimeLine "
-                    + "PropertiesFile UserName ExtractTweetNumber");
+                    + "java -cp twitterUserTimeLine-1.0-jar-with-dependencies.jar "
+                    + "twitter.twitterUserTimeLine PropertiesFile UserAccount ExtractTweetNumber");
+            System.out.println("args[0]:twitter4j.properties");
+            System.out.println("args[1]:UserAccount");
+            System.out.println("args[2]:ExtractNumber");
+            System.exit(3);
         }
         String fileName = args[0];
         String userName = args[1];
